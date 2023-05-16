@@ -80,6 +80,7 @@ a {
   -webkit-text-decoration-skip: objects;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  word-break: break-all;
 }
 abbr[title] {
   border-bottom: none;
@@ -6569,9 +6570,6 @@ tfoot {
 }
 
 @media screen and (max-width: 575px){
-  #billboard {
-    height: 655px;
-  }
   #header-wrap {
     background: rgba(0,0,0,0.6);
     padding: 22px 0;
@@ -7029,6 +7027,9 @@ section.comment-respond {
 @media screen and (max-width: 575px){
   .page-banner {
       height: 500px;
+  }
+  .divider{
+    width: 100% !important;
   }
 }
 
