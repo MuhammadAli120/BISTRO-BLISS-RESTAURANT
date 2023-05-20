@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>bistro bliss Restaurant Login</title>
+  <style>
+    .container {
+    width: 317px;
+    margin: 109px auto;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 60px;
+}
+
+h2 {
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 95%;
+    padding: 6px;
+    margin-bottom: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #0062ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#signupNotification {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#signupNotification a {
+  color: #0400ff;
+    text-decoration: none;
+}
+
+#signupNotification a:hover {
+  text-decoration: underline;
+}
+/* div {
+  background-image: url('images/background.jpg');
+} */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form id="loginForm" action="login.php" method="post">
+      <h2>Restaurant Login</h2>
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <div id="signupNotification">
+      <p class="notification">Don't have an account?  <a href="">Register Now.</a></p>
+    </div>
+  </div>
+</body>
+</html>
