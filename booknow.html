@@ -1,12 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1> booking foam </h1>
-</body>
+<html>
+  <head>
+    <title>Restaurant Booking</title>
+    <style>
+      .container {
+        width: 317px;
+        margin: 109px auto;
+        padding: 40px;
+        border: 1px solid #ccc;
+        border-radius: 60px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #booking-form {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      #booking-form label,
+      #booking-form input {
+        display: block;
+        flex-basis: auto;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      #booking-form input {
+        width: 100%;
+      }
+      #booking-form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      #booking-form .booking-form-inner-container {
+        display: flex;
+        gap: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Restaurant Booking</h1>
+
+      <form id="booking-form">
+        <div class="booking-form-inner-container">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required />
+        </div>
+
+        <div class="booking-form-inner-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required />
+        </div>
+
+        <div class="booking-form-inner-container">
+          <label for="date">Date:</label>
+          <input type="date" id="date" required />
+        </div>
+
+        <div class="booking-form-inner-container">
+          <label for="time">Time:</label>
+          <input type="time" id="time" required />
+        </div>
+
+        <div class="booking-form-inner-container">
+          <label for="guests">Number of Guests:</label>
+          <input type="number" id="guests" min="1" required />
+        </div>
+
+        <input type="submit" value="Book Now" />
+      </form>
+    </div>
+  </body>
+  <script>
+    document
+      .getElementById("booking-form")
+      .addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get form values
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var date = document.getElementById("date").value;
+        var time = document.getElementById("time").value;
+        var guests = document.getElementById("guests").value;
+
+        // Display booking details
+        alert(
+          "Thank you for your booking!\n\nName: " +
+            name +
+            "\nEmail: " +
+            email +
+            "\nDate: " +
+            date +
+            "\nTime: " +
+            time +
+            "\nGuests: " +
+            guests
+        );
+
+        // Reset form
+        document.getElementById("booking-form").reset();
+      });
+  </script>
 </html>

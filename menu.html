@@ -21,6 +21,7 @@
 	<!--link to the JavaScript files (hoverIntent is optional)-->
 	<script src="superfish/js/hoverIntent.js"></script>
 	<script src="superfish/js/superfish.js"></script>
+	<script src="menu-item-filter.js" ></script>
 
 </head>
 <body>
@@ -223,33 +224,42 @@
 	<div class="container">
 
 		<div class="dark price-list mt-sm-5 mt-5">
+			<div class="menu-item-container">
+				<button style="color: black;" class="menu-item-filter" data-menu_item_category="egg">
+					Egg
+				</button>
+				<button style="color: black;" class="menu-item-filter" data-menu_item_category="bbq-item">
+					BBQ Item
+				</button>
 			<div class="row">
-
-			<table class="col-md-6">
-				<tr>
+				<table class="col-md-6">
+				<tr class="menu-item" data-menu_item_name="bbq-item">
 					<td>
 						<img src="images/food1.jpg" class="menuImg">
 						<div class="title">
-							<strong>Soft-Boiled Organic Egg</strong> <em>with soldier</em></div>
+							<select name="title" class="title"><strong>BBQ</strong><em>&FAST FOODS</em>
+							<option>Tandoori Chicken</option>
+							</select>
+						</div>
 						</td>
 					<td class="color-primary"><strong>$6.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item" data-menu_item_name="egg">
 					<td>
 						<img src="images/food2.jpg" class="menuImg">
 						<div class="title"><strong>Egg Any Style</strong> <em>with home fries & toast</em></div></td>
 					<td class="color-primary"><strong>$5.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item" data-menu_item_name="egg">
 					<td>
 						<img src="images/food3.jpg" class="menuImg">
 						<div class="title"><strong>Scrambled Eggs in Puff Pastry</strong> <em>With wild mushrooms</em></div></td>
 					<td class="color-primary"><strong>$5.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item" data-menu_item_name="egg">
 					<td>
 						<img src="images/food4.jpg" class="menuImg">
 						<div class="title"><strong>Eggs Norwegian</strong> <em>with ahomefries</em></div></td>
@@ -258,34 +268,35 @@
 			</table>
 
 			<table  class="col-md-6">
-				<tr>
+				<tr class="menu-item">
 					<td>
 						<img src="images/food1.jpg" class="menuImg">
 						<div class="title"><strong>Tarte Tatin</strong> <em>with a caramelised sugar crust</em></div></td>
 					<td class="color-primary"><strong>$6.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item">
 					<td>
 						<img src="images/food2.jpg" class="menuImg">
 						<div class="title"><strong>Assiette De Fromages</strong> <em>Chutney and biscuits</em></div></td>
 					<td class="color-primary"><strong>$5.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item">
 					<td>
 						<img src="images/food3.jpg" class="menuImg">
 						<div class="title"><strong>Melitinia Cookies</strong> <em>Sweet cheese pastries</em></div></td>
 					<td class="color-primary"><strong>$15.00</strong></td>
 				</tr>
 
-				<tr>
+				<tr class="menu-item">
 					<td>
 						<img src="images/food4.jpg" class="menuImg">
 						<div class="title"><strong>Creme Brulee Vanilla Custard</strong> <em>with a caramelised sugar crust</em></div></td>
 					<td class="color-primary"><strong>$5.00</strong></td>
 				</tr>
 			</table>
+			</div>
 
 			</div>
 		</div>
