@@ -1,407 +1,555 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>BISTRO BLISS</title>
+  <head>
+    <title>BISTRO BLISS</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
 
     <!--link to the CSS files for this menu type-->
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css"/>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css">
-	<link rel="stylesheet" media="screen" href="superfish/css/superfish.css">	
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="bootstrap/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts/icomoon/icomoon.css" />
+    <link rel="stylesheet" media="screen" href="superfish/css/superfish.css" />
 
-	<!--link to the JavaScript files (hoverIntent is optional)-->
-	<script src="superfish/js/hoverIntent.js"></script>
-	<script src="superfish/js/superfish.js"></script>
+    <!--link to the JavaScript files (hoverIntent is optional)-->
+    <script src="superfish/js/hoverIntent.js"></script>
+    <script src="superfish/js/superfish.js"></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <header id="header-wrap">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg col-md-12">
+              <div class="navbar-brand">
+                <a href="index.html">
+                  <img src="images/logo.png" />
+                </a>
+              </div>
 
-</head>
-<body>
- 
- <div class="main-wrapper">
- 	<header id="header-wrap">
- 		<div class="container">
- 			<div class="row">
-				<nav class="navbar navbar-expand-lg col-md-12">
-				
-					<div class="navbar-brand">
-						<a href="index.html">
-							<img src="images/logo.png">
-						</a>
-					</div>
+              <button
+                class="navbar-toggler collapsed"
+                type="button"
+                data-toggle="collapse"
+                data-target="#slide-navbar-collapse"
+                aria-controls="slide-navbar-collapse"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"
+                  ><i class="icon icon-navicon"></i
+                ></span>
+              </button>
 
-					<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#slide-navbar-collapse" aria-controls="slide-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"><i class="icon icon-navicon"></i></span>
-					</button>
+              <div class="navbar-collapse collapse" id="slide-navbar-collapse">
+                <ul
+                  class="navbar-nav light list-unstyled list-inline strong sf-menu"
+                >
+                  <li class="nav-item">
+                    <a href="index.html" class="nav-link" data-effect="Home"
+                      >HOME</a
+                    >
+                  </li>
+                  <li class="nav-item active">
+                    <a
+                      href="reservation.html"
+                      class="nav-link"
+                      data-effect="Reservation"
+                      >RESERVATION</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a href="menu.html" class="nav-link" data-effect="Menu"
+                      >MENU</a
+                    >
+                  </li>
+                  <li class="dropdown-submenu">
+                    <a
+                      href="#"
+                      data-effect="Blog"
+                      class="nav-link"
+                      class="dropdown-toggle"
+                      >BLOG</a
+                    >
+                    <ul class="dropdown-menu">
+                      <li class="nav-item">
+                        <a href="blog1.html" class="hvr-sweep-to-right"
+                          >BLOG 1</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a href="blog2.html" class="hvr-sweep-to-right"
+                          >BLOG 2</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <!--navbar-collapse-->
 
-				<div class="navbar-collapse collapse" id="slide-navbar-collapse">	
-					<ul class="navbar-nav light list-unstyled list-inline strong sf-menu">
-						<li class="nav-item">
-							<a href="index.html" class="nav-link" data-effect="Home">HOME</a>
-						</li>
-						<li class="nav-item active">
-							<a href="reservation.html" class="nav-link" data-effect="Reservation">RESERVATION</a>
-						</li>
-						<li class="nav-item">
-							<a href="menu.html" class="nav-link" data-effect="Menu">MENU</a>
-						</li>
-						<li class="dropdown-submenu">
-							<a href="#" data-effect="Blog" class="nav-link" class="dropdown-toggle">BLOG</a>
-							<ul class="dropdown-menu">
-								<li class="nav-item">
-									<a href="blog1.html" class="hvr-sweep-to-right">BLOG 1</a></li>
-								<li class="nav-item">
-									<a href="blog2.html" class="hvr-sweep-to-right">BLOG 2</a>
-								</li>
-							</ul>
-						</li>
-					</ul>
-
-				</div><!--navbar-collapse-->
-
-					<div class="social-block">	
-						<div class="social-icon">
-							<a href="facebook.com">
-								<i class="icon icon-facebook"></i>
-							</a>
-							<a href="twitter.com">
-								<i class="icon icon-twitter"></i>
-							</a>
-							<a href="instagram.com">
-								<i class="icon icon-instagram"></i>
-							</a>
-						</div>
-						   <div>
-                  <button style="border: 1px;"><a href="login page.html">Sign in</a></button>
-                  <button style="border: 1px;"><a href="register.html">Create Account</a></button>
+              <div class="social-block">
+                <div class="social-icon">
+                  <a href="facebook.com">
+                    <i class="icon icon-facebook"></i>
+                  </a>
+                  <a href="twitter.com">
+                    <i class="icon icon-twitter"></i>
+                  </a>
+                  <a href="instagram.com">
+                    <i class="icon icon-instagram"></i>
+                  </a>
                 </div>
-					</div>
+                <div>
+                  <button style="border: 1px">
+                    <a href="login page.html">Sign in</a>
+                  </button>
+                  <button style="border: 1px">
+                    <a href="register.html">Create Account</a>
+                  </button>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <!----.row----->
+        </div>
+      </header>
 
-				</nav>
-				</div><!----.row----->		
+      <div class="page-banner">
+        <div class="text-content bright heading text-center light">
+          <h1 class="section-title"><strong>Create</strong> reservation</h1>
+          <div class="divider">
+            <div class="icon-wrap">
+              <i class="icon icon-spoon"></i>
+            </div>
+          </div>
+          <div class="slogan mb-5">
+            book now for the best experience in table
+          </div>
+        </div>
+      </div>
+      <!--page-banner-->
 
-			</div>
-		</header>
+      <section class="online-booking heading text-center mb-5">
+        <div class="container">
+          <h2 class="section-title text-center">
+            <strong>Make Your </strong>online booking
+          </h2>
+          <div class="divider dark mb-4">
+            <div class="icon-wrap">
+              <i class="icon icon-spoon"></i>
+            </div>
+          </div>
+          <a href="booknow.html" class="button btn-effect" type="button"
+            >Book Now</a
+          >
+        </div>
+      </section>
 
-<div class="page-banner">
-	<div class="text-content bright heading text-center light">
-		<h1 class="section-title"><strong>Create</strong> reservation</h1>
-		<div class="divider">
-			<div class="icon-wrap">
-				<i class="icon icon-spoon"></i>
-			</div>
-		</div>
-		<div class="slogan mb-5">book now for the best experience in table</div>
-	</div>
-</div><!--page-banner-->
+      <section class="tables-room-wrap">
+        <div class="container">
+          <div class="content-box dark heading col-md-6 light">
+            <div class="content text-center pb-4">
+              <h2 class="section-title">
+                <strong>Dining </strong>40 tables room
+              </h2>
+              <div class="divider mb-4">
+                <div class="icon-wrap">
+                  <i class="icon icon-spoon"></i>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore aliqua.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--container-->
+      </section>
 
-<section class="online-booking heading text-center mb-5">
-	<div class="container">
-		<h2 class="section-title text-center"><strong>Make Your </strong>online booking</h2>
-		<div class="divider dark mb-4">
-			<div class="icon-wrap">
-				<i class="icon icon-spoon"></i>
-			</div>
-		</div>
-			<a href="booknow.html" class="button btn-effect" type="button">Book Now</a>
+      <section class="reservation-modes">
+        <div class="container">
+          <div class="heading text-center">
+            <h2 class="section-title text-center">
+              <strong>Check </strong>our reservation
+            </h2>
+            <div class="divider dark mb-4">
+              <div class="icon-wrap">
+                <i class="icon icon-spoon"></i>
+              </div>
+            </div>
+          </div>
 
-	</div>
-</section>
+          <div class="content">
+            <p><strong>Reserve by Phone</strong></p>
+            <p>
+              Tourists can reserve hotel by Phone. Fully functional when
+              not.Swipe enabled. Or disabled, if you prefer.Fully responsive.
+              Scales with its container.Separate settings per breakpoint Uses
+              CSS3 when available. Fully functional when not.Swipe enabled. Or
+              disabled, if you prefer.
+            </p>
 
-<section class="tables-room-wrap">
-	<div class="container">
-		<div class="content-box dark heading col-md-6 light">
-			<div class="content text-center pb-4">
-			<h2 class="section-title"><strong>Dining </strong>40 tables room</h2>
-			<div class="divider mb-4">
-				<div class="icon-wrap">
-					<i class="icon icon-spoon"></i>
-				</div>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.</p>
-		</div>
-		</div>
-	</div><!--container-->
-</section>
+            <div class="contact-numbers">
+              <div class="numbers">
+                <i class="icon icon-phone"></i>Restaurant: (123) 459-7847
+              </div>
+              <div class="numbers">
+                <i class="icon icon-mobile"></i>Cellphone: (111) 980-300-00
+              </div>
+            </div>
+            <!--contact-numbers-->
 
-<section class="reservation-modes">	
-	<div class="container">
+            <p><strong>View our restaurants address</strong></p>
+            <p>
+              View our restaurants address. Separate settings per breakpoint
+              Uses CSS3 when available. Fully functional when not.Swipe enabled.
+              Or disabled, if you prefer.Fully responsive. Scales with its
+              container.Separate settings per breakpoint Uses CSS3 when
+              available. Fully functional when not.Swipe enabled. Or disabled,
+              if you prefer.
+            </p>
 
-		<div class="heading text-center">
-			<h2 class="section-title text-center"><strong>Check </strong>our reservation</h2>
-			<div class="divider dark mb-4">
-				<div class="icon-wrap">
-					<i class="icon icon-spoon"></i>
-				</div>
-			</div>
-		</div>
+            <div class="contact-address">
+              <div class="address darkColor">
+                <strong>Oakland</strong> 1693 Park Street
+                <a href="#">reservation@hungerhunt.com</a>
+              </div>
+              <div class="address darkColor">
+                <strong>Dallas</strong> 2205 Wilson Avenue
+                <a href="#">reservation@hungerhunt.com</a>
+              </div>
+              <div class="address darkColor">
+                <strong>Wheeling</strong> 4801 Bingamon Branch Road
+                <a href="#">reservation@hungerhunt.com</a>
+              </div>
+              <div class="address darkColor">
+                <strong>Washington</strong> 2176 Hickory Lane
+                <a href="#">reservation@hungerhunt.com</a>
+              </div>
+            </div>
+            <!--contact-addresses-->
+          </div>
+          <!--content-->
+        </div>
+      </section>
 
-		<div class="content">
-			<p><strong>Reserve by Phone</strong></p>
-				<p>Tourists can reserve hotel by Phone. Fully functional when not.Swipe enabled. Or disabled, if you prefer.Fully responsive. Scales with its container.Separate settings per breakpoint Uses CSS3 when available. Fully functional when not.Swipe enabled. Or disabled, if you prefer.</p>
+      <section class="order-menu pb-5">
+        <div class="container">
+          <div class="bright heading text-center light">
+            <h2 class="section-title text-center">
+              <strong>Check </strong>order it now menu
+            </h2>
+            <div class="divider mb-4">
+              <div class="icon-wrap">
+                <i class="icon icon-spoon"></i>
+              </div>
+            </div>
+          </div>
 
-			<div class="contact-numbers">
-				<div class="numbers"><i class="icon icon-phone"></i>Restaurant: (123) 459-7847</div>
-				<div class="numbers"><i class="icon icon-mobile"></i>Cellphone: (111) 980-300-00</div>
-			</div><!--contact-numbers-->
+          <div class="price-list">
+            <div class="row">
+              <table class="col-md-6">
+                <tr>
+                  <td class="light">
+                    <img src="images/food1.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Tarte Tatin</strong>
+                      <em>with a caramelised sugar crust</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$6.00</strong></td>
+                </tr>
 
-			<p><strong>View our restaurants address</strong></p>
-				<p>View our restaurants address. Separate settings per breakpoint Uses CSS3 when available. Fully functional when not.Swipe enabled. Or disabled, if you prefer.Fully responsive. Scales with its container.Separate settings per breakpoint Uses CSS3 when available. Fully functional when not.Swipe enabled. Or disabled, if you prefer.</p>
+                <tr>
+                  <td class="light">
+                    <img src="images/food2.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Assiette De Fromages</strong>
+                      <em>Chutney and biscuits</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$5.00</strong></td>
+                </tr>
 
-			<div class="contact-address">
-				<div class="address darkColor"><strong>Oakland</strong> 1693 Park Street <a href="#">reservation@hungerhunt.com</a></div>
-				<div class="address darkColor"><strong>Dallas</strong> 2205 Wilson Avenue <a href="#">reservation@hungerhunt.com</a></div>
-				<div class="address darkColor"><strong>Wheeling</strong> 4801 Bingamon Branch Road <a href="#">reservation@hungerhunt.com</a></div>
-				<div class="address darkColor"><strong>Washington</strong> 2176 Hickory Lane <a href="#">reservation@hungerhunt.com</a></div>
-			</div><!--contact-addresses-->
+                <tr>
+                  <td class="light">
+                    <img src="images/food3.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Melitinia Cookies</strong>
+                      <em>Sweet cheese pastries</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$15.00</strong></td>
+                </tr>
 
-		</div><!--content-->
-	</div>
-</section>
+                <tr>
+                  <td class="light">
+                    <img src="images/food4.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Creme Brulee Vanilla Custard</strong>
+                      <em>with a caramelised sugar crust</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$5.00</strong></td>
+                </tr>
+              </table>
 
-<section class="order-menu pb-5">
-	<div class="container">	
+              <table class="col-md-6">
+                <tr>
+                  <td class="light">
+                    <img src="images/food1.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Tarte Tatin</strong>
+                      <em>with a caramelised sugar crust</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$6.00</strong></td>
+                </tr>
 
-		<div class="bright heading text-center light">
-			<h2 class="section-title text-center"><strong>Check </strong>order it now menu</h2>
-			<div class="divider mb-4">
-				<div class="icon-wrap">
-					<i class="icon icon-spoon"></i>
-				</div>
-			</div>
-		</div>
-		
-		<div class="price-list">
+                <tr>
+                  <td class="light">
+                    <img src="images/food2.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Assiette De Fromages</strong>
+                      <em>Chutney and biscuits</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$5.00</strong></td>
+                </tr>
 
-		<div class="row">
+                <tr>
+                  <td class="light">
+                    <img src="images/food3.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Melitinia Cookies</strong>
+                      <em>Sweet cheese pastries</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$15.00</strong></td>
+                </tr>
 
-			<table class="col-md-6">
-				<tr>
-					<td class="light">
-						<img src="images/food1.jpg" class="menuImg">
-						<div class="title">
-							<strong>Tarte Tatin</strong> <em>with a caramelised sugar crust</em></div>
-						</td>
-					<td class="color-primary"><strong>$6.00</strong></td>
-				</tr>
+                <tr>
+                  <td class="light">
+                    <img src="images/food4.jpg" class="menuImg" />
+                    <div class="title">
+                      <strong>Creme Brulee Vanilla Custard</strong>
+                      <em>with a caramelised sugar crust</em>
+                    </div>
+                  </td>
+                  <td class="color-primary"><strong>$5.00</strong></td>
+                </tr>
+              </table>
+            </div>
+          </div>
 
-				<tr>
-					<td class="light">
-						<img src="images/food2.jpg" class="menuImg">
-						<div class="title"><strong>Assiette De Fromages</strong> <em>Chutney and biscuits</em></div></td>
-					<td class="color-primary"><strong>$5.00</strong></td>
-				</tr>
+          <div class="pix_btn text-center">
+            <a href="menu.html" class="button btn-effect mt-5"
+              >View full menu</a
+            >
+          </div>
+        </div>
+      </section>
 
-				<tr>
-					<td class="light">
-						<img src="images/food3.jpg" class="menuImg">
-						<div class="title"><strong>Melitinia Cookies</strong> <em>Sweet cheese pastries</em></div></td>
-					<td class="color-primary"><strong>$15.00</strong></td>
-				</tr>
+      <section class="contact-us margin-medium">
+        <div class="container">
+          <div class="row">
+            <div class="map-block col-md-7">
+              <!-- <img src="images/map.jpg" alt="map"> -->
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe
+                    class="gmap_iframe"
+                    frameborder="0"
+                    scrolling="no"
+                    marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=karachi&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                  ></iframe
+                  ><a href="https://capcuttemplate.org/">Capcut Template</a>
+                </div>
+              </div>
+            </div>
+            <!--map-block-->
 
-				<tr>
-					<td class="light">
-						<img src="images/food4.jpg" class="menuImg">
-						<div class="title"><strong>Creme Brulee Vanilla Custard</strong> <em>with a caramelised sugar crust</em></div></td>
-					<td class="color-primary"><strong>$5.00</strong></td>
-				</tr>
-			</table>
+            <div class="contact-info col-md-4">
+              <div class="heading text-center">
+                <h2 class="section-title text-center">contact us</h2>
+                <div class="divider dark mb-4">
+                  <div class="icon-wrap">
+                    <i class="icon icon-spoon"></i>
+                  </div>
+                </div>
+              </div>
 
-			<table class="col-md-6">
-				<tr>
-					<td class="light">
-						<img src="images/food1.jpg" class="menuImg">
-						<div class="title"><strong>Tarte Tatin</strong> <em>with a caramelised sugar crust</em></div></td>
-					<td class="color-primary"><strong>$6.00</strong></td>
-				</tr>
+              <form>
+                <div class="form-group dark">
+                  <input
+                    type="text"
+                    name="Name"
+                    class="form-control"
+                    placeholder="Name"
+                  />
+                  <input
+                    type="text"
+                    name="Email"
+                    class="form-control mt-4"
+                    placeholder="E-mail"
+                  />
+                  <textarea
+                    class="form-control mt-4"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
 
-				<tr>
-					<td class="light">
-						<img src="images/food2.jpg" class="menuImg">
-						<div class="title"><strong>Assiette De Fromages</strong> <em>Chutney and biscuits</em></div></td>
-					<td class="color-primary"><strong>$5.00</strong></td>
-				</tr>
+                <div class="pix_btn text-center">
+                  <a href="#" class="button btn-effect mt-5">send</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
 
-				<tr>
-					<td class="light">
-						<img src="images/food3.jpg" class="menuImg">
-						<div class="title"><strong>Melitinia Cookies</strong> <em>Sweet cheese pastries</em></div></td>
-					<td class="color-primary"><strong>$15.00</strong></td>
-				</tr>
+      <footer id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3">
+              <div class="footer-menu">
+                <h4 class="widget-title">Contact info</h4>
+                <ul id="footer-menu" class="list-unstyled">
+                  <li>
+                    <i class="icon icon-map-marker"></i>PO Box 1612 Collin
+                    Street, NYC
+                  </li>
+                  <li><i class="icon icon-mobile"></i>(+801) - 2345 - 6789</li>
+                  <li>
+                    <i class="icon icon-envelope"></i
+                    ><a href="#">support@hungerhunt.com</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-				<tr>
-					<td class="light">
-						<img src="images/food4.jpg" class="menuImg">
-						<div class="title"><strong>Creme Brulee Vanilla Custard</strong> <em>with a caramelised sugar crust</em></div></td>
-					<td class="color-primary"><strong>$5.00</strong></td>
-				</tr>
-			</table>
+            <div class="col-6 col-md-2">
+              <div class="footer-menu">
+                <h4 class="widget-title">Support</h4>
+                <ul id="footer-menu" class="list-unstyled">
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Delivery</a></li>
+                  <li><a href="#">Payment Options</a></li>
+                  <li><a href="#">Returns & Refunds</a></li>
+                </ul>
+              </div>
+            </div>
 
-		</div>
-		</div>
+            <div class="col-6 col-md-2">
+              <div class="footer-menu">
+                <h4 class="widget-title">Shop</h4>
+                <ul id="footer-menu" class="list-unstyled">
+                  <li><a href="#">Non-Veg</a></li>
+                  <li><a href="#">Veg</a></li>
+                  <li><a href="#">Salads</a></li>
+                  <li><a href="#">Desserts</a></li>
+                  <li><a href="#">Appetizers</a></li>
+                </ul>
+              </div>
+            </div>
 
-			<div class="pix_btn text-center">
-				<a href="menu.html" class="button btn-effect mt-5">View full menu</a>
-			</div>
+            <div class="col-6 col-md-2">
+              <div class="footer-menu">
+                <h4 class="widget-title">Information</h4>
+                <ul id="footer-menu" class="list-unstyled">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Blogs</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
 
-	</div>
-</section>
+            <div class="col-6 col-md-2">
+              <div class="footer-menu">
+                <h4 class="widget-title">My Account</h4>
+                <ul id="footer-menu" class="list-unstyled">
+                  <li><a href="#">Your Account</a></li>
+                  <li><a href="checkout.html">Check Out</a></li>
+                  <li><a href="login page.html">Login</a></li>
+                  <li><a href="register.html">Register</a></li>
+                </ul>
+              </div>
+            </div>
 
+            <div class="col-6 col-md-2">
+              <div class="social-icon">
+                <h4 class="widget-title">Find u on</h4>
+                <ul class="list-unstyled d-flex">
+                  <li>
+                    <a href="#"><i class="icon icon-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="icon icon-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
 
-<section class="contact-us margin-medium">
-	<div class="container">
-		<div class="row">
-			<div class="map-block col-md-7">
-				<img src="images/map.jpg" alt="map">
-			</div><!--map-block-->
+            <div class="col-6 col-md-3">
+              <div class="footer-menu">
+                <h4 class="widget-title">newsletter</h4>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      name="email address"
+                      placeholder="Your email address"
+                    />
+                    <button type="submit" class="searchbtn">
+                      <i class="icon icon-paper-plane"></i>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
 
-			<div class="contact-info col-md-4">
-				<div class="heading text-center">
-					<h2 class="section-title text-center">contact us</h2>
-					<div class="divider dark mb-4">
-						<div class="icon-wrap">
-							<i class="icon icon-spoon"></i>
-						</div>
-					</div>
-				</div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="content">
+            <div class="copyright">
+              <p>© 2022 - MUHAMMAD ALI & TEAM</p>
+            </div>
+            <div class="payment-card">
+              <img src="images/visa.png" class="cardImg" />
+              <img src="images/american-express.png" class="cardImg" />
+              <img src="images/master-card.png" class="cardImg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-				<form>
-					<div class="form-group dark">
-						<input type="text" name="Name" class="form-control" placeholder="Name">
-						<input type="text" name="Email" class="form-control mt-4" placeholder="E-mail">
-						<textarea class="form-control mt-4" placeholder="Message"></textarea>
-					</div>
-
-				<div class="pix_btn text-center">
-					<a href="#" class="button btn-effect mt-5">send</a>
-				</div>
-
-				</form>
-
-			</div>
-		</div>
-	</div>
-</section>
-
- <footer id="footer">
-		<div class="container">
-			<div class="row">
-
-				<div class="col-6 col-md-3">	
-					<div class="footer-menu">
-							<h4 class="widget-title">Contact info</h4>
-						<ul id="footer-menu" class="list-unstyled">
-							<li><i class="icon icon-map-marker"></i>PO Box 1612 Collin Street, NYC</li>
-							<li><i class="icon icon-mobile"></i>(+801) - 2345 - 6789</li>
-							<li><i class="icon icon-envelope"></i><a href="#">support@hungerhunt.com</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-2">	
-					<div class="footer-menu">
-							<h4 class="widget-title">Support</h4>
-						<ul id="footer-menu" class="list-unstyled">
-							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Delivery</a></li>
-							<li><a href="#">Payment Options</a></li>
-							<li><a href="#">Returns & Refunds</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-2">	
-					<div class="footer-menu">
-							<h4 class="widget-title">Shop</h4>
-						<ul id="footer-menu" class="list-unstyled">
-							<li><a href="#">Non-Veg</a></li>
-							<li><a href="#">Veg</a></li>
-							<li><a href="#">Salads</a></li>
-							<li><a href="#">Desserts</a></li>
-							<li><a href="#">Appetizers</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-2">	
-					<div class="footer-menu">
-							<h4 class="widget-title">Information</h4>
-						<ul id="footer-menu" class="list-unstyled">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">About Us</a></li>
-							<li><a href="#">Blogs</a></li>
-							<li><a href="#">Contact Us</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-2">	
-					<div class="footer-menu">
-							<h4 class="widget-title">My Account</h4>
-						<ul id="footer-menu" class="list-unstyled">
-							<li><a href="#">Your Account</a></li>
-							<li><a href="checkout.html">Check Out</a></li>
-							<li><a href="login page.html">Login</a></li>
-							<li><a href="register.html">Register</a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-2">	
-					<div class="social-icon">
-							<h4 class="widget-title">Find u on</h4>
-						<ul class="list-unstyled d-flex">
-							<li><a href="#"><i class="icon icon-facebook"></i></a></li>
-							<li><a href="#"><i class="icon icon-twitter"></i></a></li>
-							<li><a href="#"><i class="icon icon-instagram"></i></a></li>
-						</ul>
-					</div>
-				</div>
-
-				<div class="col-6 col-md-3">	
-					<div class="footer-menu">
-							<h4 class="widget-title">newsletter</h4>
-						<form>
-							<div class="form-group">
-							<input type="email" class="form-control" id="email" name="email address" placeholder="Your email address">
-							<button type="submit" class="searchbtn"><i class="icon icon-paper-plane"></i></button>
-							</div>
-						</form>
-
-					</div>
-				</div>
-
-			</div>
-		</div>
-	</footer> 
-
-	<div class="footer-bottom">
-		<div class="container">
-			<div class="content">
-				<div class="copyright">
-					<p>© 2022 - MUHAMMAD ALI & TEAM</p>
-				</div>
-				<div class="payment-card">
-					<img src="images/visa.png" class="cardImg">
-					<img src="images/american-express.png" class="cardImg">
-					<img src="images/master-card.png" class="cardImg">
-				</div>
-			</div>
-		</div>
-	</div>
-
- </div>
-
-	<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-
-</body>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </body>
 </html>
