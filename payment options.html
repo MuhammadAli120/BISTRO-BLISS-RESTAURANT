@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Payment Page</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+input[type="text"] {
+  width: 90%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+div{
+  display: block;
+  border: #ccc;
+  border-radius: 20%;
+
+}
+* {
+  box-sizing: border-box;
+}
+
+  </style>
+</head>
+<body>
+  <div>
+  <h1>Payment</h1>
+  <form id="payment-form">
+    <div class="form-group">
+      <label for="card-number">Card Number</label>
+      <input type="text" id="card-number" name="card-number" placeholder="Enter card number" required>
+    </div>
+    <div class="form-group">
+      <label for="card-holder">Card Holder</label>
+      <input type="text" id="card-holder" name="card-holder" placeholder="Enter card holder name" required>
+    </div>
+    <div class="form-group">
+      <label for="expiry-date">Expiry Date</label>
+      <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YYYY" required>
+    </div>
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required>
+    </div>
+    <button type="submit">Pay Now</button>
+    <a href="index.html">Back</a>
+  </form>
+  </div>
+  
+  <script>
+    document.getElementById('payment-form').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+  
+  // Get the form values
+  var cardNumber = document.getElementById('card-number').value;
+  var cardHolder = document.getElementById('card-holder').value;
+  var expiryDate = document.getElementById('expiry-date').value;
+  var cvv = document.getElementById('cvv').value;
+  
+  // Validate the form values (you can add your own validation logic here)
+  if (cardNumber === '' || cardHolder === '' || expiryDate === '' || cvv === '') {
+    alert('Please fill in all the fields');
+    return;
+  }
+  
+  // Perform the payment processing (you can add your own logic here)
+  // For demonstration purposes, we'll just display a success message
+  alert('Payment successful!');
+});
+
+
+
+  </script>
+</body>
+</html>
