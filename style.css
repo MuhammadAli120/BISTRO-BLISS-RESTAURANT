@@ -7643,3 +7643,10 @@ section.comment-respond {
 .menu-item.hide-menu-item {
   display: none;
 }
+.menu-item-filter.active-filter:hover {
+  color: #000000;
+}
+.menu-item-filter.active-filter {
+  background-image: linear-gradient(30deg, #000000 50%, transparent 50%);
+  border-color: #000000;
+}

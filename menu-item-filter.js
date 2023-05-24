@@ -10,9 +10,13 @@ class MenuItemFiltration {
   }
   filtration(filter) {
     const menuCategory = filter.dataset.menu_item_category;
+    this.filters.forEach((filterBtn) => {
+      filterBtn.classList.remove("active-filter");
+    });
+    filter.classList.add("active-filter");
     this.menuItems.forEach((menuItem) => {
       const menuItemName = menuItem.dataset.menu_item_name;
-      if (menuItemName === menuCategory) {
+      if (menuItemName === menuCategory || menuCategory === "all") {
         menuItem.classList.remove("hide-menu-item");
       } else {
         menuItem.classList.add("hide-menu-item");
