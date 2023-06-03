@@ -1106,7 +1106,7 @@ select,
   width: 100%;
   font-size: 14px;
   line-height: 2;
-  color: #121212;
+  color: white;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -5951,6 +5951,9 @@ tfoot {
     padding-top: 1em;
     padding-bottom: 1em;
   }
+  .menu-filter-inner-container {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 /* - Section margin
@@ -7666,4 +7669,22 @@ section.comment-respond {
 .gmap_iframe {
   width: 100%;
   height: 100%;
+}
+
+.menu-filter-inner-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin: 20px 0;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  align-items: center;
+}
+.menu-item-title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
