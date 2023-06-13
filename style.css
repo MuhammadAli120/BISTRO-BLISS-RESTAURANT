@@ -983,8 +983,10 @@ img.pageImg {
   max-height: 800px; /* Page Head banner Image */
 }
 img.introImg {
-  width: 580px; /* About Us image in Homepage */
-  height: 400px;
+    width: 630px;
+    height: 400px;
+    padding: 10px;
+    margin: 29px;
 }
 img.menuImg {
   width: 60px; /* Menu image in price list section */
@@ -7559,7 +7561,7 @@ section.comment-respond {
   color: #c59d5f;
 }
 .reservation-modes .contact-address a {
-  display: block;
+  display: inline;
 }
 
 /* -- Order Now Menu section of Reservation page -------------*/
