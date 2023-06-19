@@ -1025,8 +1025,8 @@ img.commentorImg {
   border-radius: 50%;
 }
 img.sectionImg {
-  width: 100%; /* Menu page section background-image  */
-  max-height: 540px;
+  width: 100%;
+    max-height: 366px;
 }
 img.cardImg {
   width: 30px; /* Footer payment card image */
@@ -7692,4 +7692,17 @@ section.comment-respond {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.add-to-cart {
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #e68a00;
 }
