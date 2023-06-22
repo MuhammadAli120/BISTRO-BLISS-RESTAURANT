@@ -1,2 +1,4 @@
 # BISTRO-BLISS-RESTAURANT
-this is a web app for a restaurant 
+this is our web app for a restaurant 
+
+![Alt text](readme/screenshot.JPG)
